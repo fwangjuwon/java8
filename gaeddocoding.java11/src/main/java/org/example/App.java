@@ -1,14 +1,16 @@
 package org.example;
 
-import java.util.Arrays;
-import java.util.function.UnaryOperator;
+import java.util.ArrayList;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        Foo foo = new DefaultFoo("juwon");
-        foo.printName();
-        foo.printNameUpperCase();
+        List<String> name = new ArrayList<>();
+        name.add("juwon");
+        name.add("whiteship");
+        name.add("bokrae");
+        name.add("foo");
 
-        Foo.printAnything();
+        name.forEach(System.out::println);
     }
 }
